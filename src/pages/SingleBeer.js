@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function SingleBeer () {
-    const [beerDetails, setbeerDetails] = useState();
+    const [beerDetails, setbeerDetails] = useState([]);
     const { beerId } = useParams();
 
     useEffect(() => {
@@ -19,9 +19,9 @@ function SingleBeer () {
           // eslint-disable-next-line
       }, []);
 
-      if (!beerDetails){
-        return <h1>Is Loading</h1>
-      }
+    //   if (!beerDetails){
+    //     return <h1>Is Loading</h1>
+    //   }
 
     return (
         <div>

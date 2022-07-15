@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 function RandomBeers () {
-    const [randomBeerDetails, setrandomBeerDetails] = useState();
+    const [randomBeerDetails, setrandomBeerDetails] = useState([]);
     const { beerId } = useParams();
 
     useEffect(() => {
@@ -19,9 +19,9 @@ function RandomBeers () {
           // eslint-disable-next-line
       }, []);
 
-      if (!randomBeerDetails){
-        return <h1>Is Loading</h1>
-      }
+    //   if (!randomBeerDetails){
+    //     return <h1>Is Loading</h1>
+    //   }
 
     return (
         <div>
