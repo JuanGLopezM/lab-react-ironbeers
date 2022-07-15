@@ -6,6 +6,7 @@ import ListBeers from './pages/ListBeers';
 import RandomBeer from './pages/RandomBeer';
 import NewBeer from './pages/NewBeer';
 import SingleBeer from './pages/SingleBeer';
+import React from 'react';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import homeImage from '../assets/HomeImage.png';
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from 'axios';
 import {useState, useEffect} from 'react';
 
@@ -28,9 +28,9 @@ function ListBeers () {
         {allBeers.map((beer) => {
         return (
           <div key={beer._id} >
-          <NavLink to={`/beers/${beer._id}`}>
+          <Link to={`/beers/${beer._id}`}>
             <img src={beer.image_url} alt="beer" className="size"/>
-            </NavLink>
+            </Link>
             <h3>Name: {beer.name}</h3>
             <p>Tagline: {beer.tagline}</p>
             <p>Contributed by: {beer.contributed_by}</p>

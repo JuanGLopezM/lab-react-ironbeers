@@ -3,22 +3,26 @@ import React from 'react';
 import beerImage from '../assets/beers.png';
 import newBeerImage from '../assets/new-beer.png';
 import randomBeerImage from '../assets/random-beer.png';
+import { Link } from "react-router-dom";
 
 
 function Home () {
     return (
         <div>
-        <img src={beerImage} alt="beer" />
+        <Link to="/beers">
+          <img src={beerImage} alt="beer" />
+        </Link>
+        <h3>All Beers</h3>
         <br></br>
-        <a href="/beers">All Beers</a>
+        <Link to="/random-beer">
+          <img src={randomBeerImage} alt="beer" />
+        </Link>
+        <h3>Random beer</h3>
         <br></br>
-        <img src={newBeerImage} alt="beer" />
-        <br></br>
-        <a href="/random-beer">Random beer</a>
-        <br></br>
-        <img src={randomBeerImage} alt="beer" />
-        <br></br>
-        <a href="/new-beer">New Beer</a>
+        <Link to="/new-beer">
+          <img src={newBeerImage} alt="beer" />
+        </Link>
+        <h3>New Beer</h3>
         </div>
     )
 }
