@@ -2,7 +2,7 @@ import React from 'react';
 import homeImage from '../assets/HomeImage.png';
 import { NavLink } from "react-router-dom";
 //import { useState, useEffect } from 'react';
-
+import { :beerId } from './pages/ListBeers';
 
 function SingleBeer () {
     return (
@@ -11,6 +11,7 @@ function SingleBeer () {
         <NavLink to="/">
       <img src={homeImage} alt="home"/></NavLink>
         </header>
+        <p>Single Beer</p>
         </div>
     )
 }
