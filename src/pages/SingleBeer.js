@@ -44,11 +44,3 @@ function SingleBeer () {
 }
 
 export default SingleBeer;
-
-// image
-// name
-// tagline
-// first_brewed
-// attenuation_level
-// description
-// contributed_by
