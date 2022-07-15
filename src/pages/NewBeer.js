@@ -28,7 +28,7 @@ function NewBeer() {
       contributed_by: contributedBy
     };
     axios
-      .post("https://ih-beers-api2.herokuapp.com/beers", body)
+      .post("https://ih-beers-api2.herokuapp.com/beers/new", body)
       .then((response) => {
         setName("");
         setTagline("");
