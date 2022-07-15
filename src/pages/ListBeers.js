@@ -27,8 +27,8 @@ function ListBeers () {
         </header>
         {allBeers.map((beer) => {
         return (
-          <div key={beer._id} className="card size">
-            <img src={beer.image_url} alt="beer" />
+          <div key={beer._id} >
+            <img src={beer.image_url} alt="beer" className="size"/>
             <h3>Name: {beer.name}</h3>
             <p>Tagline: {beer.tagline}</p>
             <p>Contributed by: {beer.contributed_by}</p>

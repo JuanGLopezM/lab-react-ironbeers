@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.size{
+  max-height: 300px
+}
